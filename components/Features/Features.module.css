@@ -1,0 +1,520 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:wght@300&display=swap');
+
+.features{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 300px 0;
+    position: relative;
+}
+.featuresBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+}
+.featuresBoxr1{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 80%;
+    /* flex-wrap: wrap; */
+}
+.featuresBoxr2{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 80%;
+    /* height: 850px; */
+    /* flex-wrap: wrap; */
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 20px;
+    border: 2px solid #FFF;
+    margin: 20px;
+    position: relative;
+    z-index: 100;
+   /* background: linear-gradient(0deg, rgba(95, 95, 95, 0), rgba(95, 95, 95, 0.29)),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    ; */
+    background-image: url(../../public/cardbkg.png);
+    background-size: cover;
+
+    transition: width 0.5s;
+ 
+}
+
+.boxContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.boxContent div{
+    font-family: 'Tomorrow', sans-serif;
+/* font-weight: 300 !important; */
+line-height: 35.52px;
+font-size: 30px;
+color: white;
+}
+.boxContent img{
+    width: 200px;
+}
+.border {
+    position: absolute;
+
+    background-color: #323232; /* Set the desired border color */
+    width: 80%;
+    height: 3px;
+    top: -3px;
+    z-index: 1;
+  }
+  .border2 {
+    position: absolute;
+
+    background-color: #323232; /* Set the desired border color */
+    width: 80%;
+    height: 3px;
+    bottom: -3px;
+    z-index: 1;
+  }
+.box2{
+    padding: 30px 20px;
+}
+.box2 img{
+    width: 300px;
+}
+.box3{
+    padding: 30px 20px;
+    width: 60%;
+}
+.box3 img{
+    width: 400px;
+}
+.box4{
+    padding: 30px 20px;
+    width: 40%;
+    height: max-content;
+}
+.box4 .boxContent{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+}
+.box4 img{
+    height: 250px;
+}
+.featurestitle{
+    font-weight: 600;
+    font-size: 72px;
+    font-family: 'Tomorrow', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 80%;
+    text-transform: uppercase;
+    /* text-shadow: 2px 2px 4px #fff; */
+    position: relative;
+    z-index: 10;
+
+}
+.featurestitlebkg{
+    font-weight: 600;
+    font-size: 72px;
+    font-family: 'Tomorrow', sans-serif;
+    color: #00060F;
+    display: flex;
+    text-shadow: white;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 80%;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #ffffff67;
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    z-index: -1;
+}
+
+.box1 img{
+    animation-name: floating;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+/*  */
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }    
+}
+
+.box2 img{
+    animation-name: floating2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+ 
+@keyframes floating2 {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 10px); }
+    100%   { transform: translate(0, -0px); }    
+}
+
+.box3 img{
+    animation-name: floating3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+ 
+@keyframes floating3 {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 30px); }
+    100%   { transform: translate(0, -0px); }    
+}
+.box4 img{
+    animation-name: floating4;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+ 
+@keyframes floating4 {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }    
+}
+.cubes{
+    position: absolute;
+    bottom: -150px;
+    width: 20%;
+    z-index: 10;
+    opacity: 0.3;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 8000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 8000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 8000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    
+    animation-name: spin;
+    animation-duration: 8000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.box1 {
+    animation: expandAnimation 5s ease-in-out 0s infinite;
+  }
+  
+  .box1:hover {
+    animation-play-state: paused;
+  }
+  
+  .box2 {
+    animation: expandAnimation 4s ease-in-out 0s infinite;
+  }
+  
+  .box2:hover {
+    animation-play-state: paused;
+  }
+  
+  .box3 {
+    animation: expandAnimation 5s ease-in-out 0s infinite;
+  }
+  
+  .box3:hover {
+    animation-play-state: paused;
+  }
+  
+  .box4 {
+    animation: expandAnimation2 4s ease-in-out 0s infinite;
+  }
+  
+  .box4:hover {
+    animation-play-state: paused;
+  }
+  
+  @keyframes expandAnimation {
+    0% {
+      width: 50%;
+    }
+    50% {
+      width: 100%;
+    }
+    100% {
+      width: 50%;
+    }
+  }
+  
+  @keyframes expandAnimation2 {
+    0% {
+      height: 50%;
+    }
+    50% {
+      height: 100%;
+    }
+    100% {
+      height: 50%;
+    }
+  }
+  
+@media screen and (max-width:1000px) {
+    .features{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 150px 0;
+        position: relative;
+    }
+    .featuresBox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+    }
+    .featuresBoxr1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        /* flex-wrap: wrap; */
+    }
+    .featuresBoxr2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        flex-direction: column;
+        width: 100%;
+        /* height: 850px; */
+        /* flex-wrap: wrap; */
+    }
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 85%;
+        padding: 20px;
+        border: 2px solid #FFF;
+        margin: 20px 0;
+        position: relative;
+        z-index: 100;
+   /* background: linear-gradient(0deg, rgba(95, 95, 95, 0), rgba(95, 95, 95, 0.29)),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    ; */
+    background-image: url(../../public/cardbkg.png);
+    background-size: cover;
+     
+    }
+    
+    .boxContent{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .boxContent div{
+        font-family: 'Tomorrow', sans-serif;
+    font-weight: 300;
+    line-height:22px;
+    font-size: 16px;
+    color: white;
+    }
+    .boxContent img{
+        width: 100px;
+    }
+    .border {
+        position: absolute;
+    
+        background-color: #323232; /* Set the desired border color */
+        width: 80%;
+        height: 3px;
+        top: -3px;
+        z-index: 1;
+      }
+      .border2 {
+        position: absolute;
+    
+        background-color: #323232; /* Set the desired border color */
+        width: 80%;
+        height: 3px;
+        bottom: -3px;
+        z-index: 1;
+      }
+      .box1{
+        width: 80%;
+      }
+      .box1 img{
+        width: 150px;
+
+      }
+    .box2{
+        padding: 20px;
+        width: 80%;
+    }
+    .box2 img{
+        width: 150px;
+    }
+    .box3{
+        width: 80%;
+
+        padding:  20px;
+    }
+    .box3 img{
+        width: 150px;
+    }
+    .box4{
+        width: 80%;
+
+        padding:20px;
+        height: max-content;
+    }
+    .box4 .boxContent{
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction: row;
+    }
+    .box4 img{
+        width: 150px;
+        height: auto;
+    }
+    .box:hover {
+        width:85%; /* Set the width to 100% on hover */
+      }
+    .featurestitle{
+        font-weight: 600;
+        font-size: 40px;
+        font-family: 'Tomorrow', sans-serif;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-transform: uppercase;
+    }
+    .featurestitlebkg{
+        font-weight: 600;
+        font-size: 40px;
+        font-family: 'Tomorrow', sans-serif;
+        color: #00060F;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 1px #ffffff67;
+        position: absolute;
+        left: 10px;
+        top: 8px;
+        z-index: -1;
+    }
+    
+
+    .cubes{
+        position: absolute;
+        bottom: -100px;
+        width: 40%;
+        z-index: 10;
+        opacity: 0.5;
+    }
+    .box1 {
+        animation: expanerdAnimation 6s ease-in-out 0s infinite;
+      }
+      
+      .box1:hover {
+        animation-play-state: paused;
+      }
+      
+      .box2 {
+        animation: expandAernimation 8s ease-in-out 0s infinite;
+      }
+      
+      .box2:hover {
+        animation-play-state: paused;
+      }
+      
+      .box3 {
+        animation: expanerdAnimation 8s ease-in-out 0s infinite;
+      }
+      
+      .box3:hover {
+        animation-play-state: paused;
+      }
+      
+      .box4 {
+        animation: expanderAnimation2 6s ease-in-out 0s infinite;
+      }
+      
+      .box4:hover {
+        animation-play-state: paused;
+      }
+      .box2 .boxContent{
+        display: flex;
+        flex-direction: row-reverse ;
+      }
+      .box3 .boxContent{
+        display: flex;
+        flex-direction:column ;
+      }
+
+      .div1{
+       width: 100%;
+       display: flex;
+        justify-content: flex-start;
+      }
+      .div2{
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+       }
+      .box4 .boxContent{
+        display: flex;
+        flex-direction:column-reverse ;
+      }
+}
