@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST='{"index.js -> @/components/Landing/Landing":{"id":9719,"files":["static/css/455b7f8ac77c4fd6.css","static/chunks/719.893aa5b8f42b7639.js"]},"index.js -> @/components/Works/Works":{"id":9174,"files":["static/css/f9084dbfe3d12381.css","static/chunks/174.5265b2e7bf9a0f4a.js"]}}';
